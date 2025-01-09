@@ -38,3 +38,18 @@ void enter(){
 	total=total+choice;
  }
 }
+void show(){
+	if(total=0){
+		cout<<"No data is entered"<<endl;
+	}else{
+	for(int i=0;i<total;i++){
+		cout<<"Data of studen:"<<i+1<<endl<<endl;
+		cout<<"Name: "<<arr1[i]<<endl;
+		cout<<"Regno: "<<arr2[i]<<endl;
+		cout<<"Course: "<<arr3[i]<<endl;
+		//cout<<"Class: "<<arr4[i]<<endl;
+		cout<<"Contact: "<<arr5[i]<<endl;
+					
+	}
+  }
+}
