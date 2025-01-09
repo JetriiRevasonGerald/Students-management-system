@@ -53,3 +53,23 @@ void show(){
 	}
   }
 }
+void search(){
+	if(total=0){
+		cout<<"No data is entered"<<endl;
+	}else{
+	string regno;	
+	cout<<"enter RegNo of student which you want to search: ";
+	cin>>regno;
+	for(int i=0;i<total;i++){
+		if(regno==arr2[1]){
+		
+		cout<<"Data of studen:"<<i+1<<endl<<endl;
+		cout<<"Name: "<<arr1[i]<<endl;
+		cout<<"Regno: "<<arr2[i]<<endl;
+		cout<<"Course: "<<arr3[i]<<endl;
+		//cout<<"Class: "<<arr4[i]<<endl;
+		cout<<"Contact: "<<arr5[i]<<endl;
+		}
+	}
+ }
+
