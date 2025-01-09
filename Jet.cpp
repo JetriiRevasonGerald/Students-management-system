@@ -103,3 +103,36 @@ void update(){
 	}
   }
 } 
+void deleterecord(){
+	if(total=0){
+		cout<<"No data is entered"<<endl;
+	}else{
+	int a;
+	cout<<"Press 1 to delete full record"<<endl;
+	cout<<"Press 2 to delete specific record"<<endl;
+	cin>>a;
+	if(a==1){
+		total=0;
+		cout<<"All record is deleted"<<endl;
+	}
+	else(a==2 );{
+		string regno;
+		cout<<"Enter regno which you want to delete"<<endl;
+		cin>>regno;
+		for(int i=0;i<total;i++){
+			if(regno==arr2[i]){
+				for(a=i;a<total;a++){
+					arr1[a]=arr1[a+1];
+					arr2[a]=arr2[a+1];
+					arr3[a]=arr3[a+1];
+					//arr4[j]=arr4[j+1];
+					arr5[a]=arr5[a+1];
+				}
+				total--;
+				cout<<"Your required record is deleted..!!"<<endl;
+			}
+		}
+	}
+	
+ }
+}
